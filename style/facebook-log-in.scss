@@ -1,0 +1,183 @@
+* {
+  margin: 0 auto;
+}
+body {
+  background-color: aliceblue;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 500px;
+  margin-top: 50px;
+  opacity: 7;
+}
+.left {
+  width: 455px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.side {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.box {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border: none;
+}
+.box1,
+.box2 {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  p {
+    color: gray;
+    text-align: center;
+    padding-top: 3px;
+  }
+  .p1 {
+    font-family: 900;
+    font-size: 19px;
+    a {
+      text-decoration: none;
+      color: cornflowerblue;
+    }
+    a:hover {
+      color: black;
+    }
+  }
+}
+.small-box {
+  width: 150px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(249, 249, 250);
+  margin-top: 0px;
+  border: none;
+  border-radius: 10px;
+  img {
+    width: 150px;
+    height: 170px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+  }
+}
+.facebook {
+  color: cornflowerblue;
+  font-weight: 900;
+  font-size: 37px;
+}
+.recent {
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.click {
+  color: gray;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 365px;
+  height: 330px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.small {
+  width: 365px;
+  height: 300px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+input {
+  width: 345px;
+  height: 41px;
+  margin-top: 15px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  font-size: 17px;
+}
+input:active {
+  border: 1px solid blue;
+  // I did not see the effect of this one
+}
+.log-in {
+  width: 345px;
+  height: 47px;
+  font-size: 21px;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.forgot {
+  color: rgb(70, 70, 211);
+  margin: 17px 0;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: rgb(70, 70, 211);
+  }
+}
+.create {
+  width: 199px;
+  height: 50px;
+  color: white;
+  background-color: rgb(64, 187, 64);
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17px;
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 17px;
+  }
+}
+.cele {
+  text-align: center;
+  color: rgb(28, 30, 33);
+  margin-top: 50px;
+  span {
+    font-weight: 900;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      color: blue;
+    }
+  }
+}
+a:hover {
+  color: black;
+}

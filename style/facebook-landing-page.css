@@ -148,10 +148,19 @@ header .hd2 .iconss {
           align-items: center;
 }
 
+header .hd2 .iconss .blue-border {
+  border-bottom: 2px solid blue;
+}
+
+header .hd2 .iconss .fa-house {
+  color: blue;
+}
+
 header .hd2 .iconss .iconn {
-  width: 50px;
+  color: black;
+  background-color: white;
+  width: 100px;
   height: 50px;
-  border-radius: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,11 +170,6 @@ header .hd2 .iconss .iconn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header .hd2 .iconss .iconn .border {
-  border-bottom: 5px solid blue;
-  color: blue;
 }
 
 header .hd1 {
@@ -334,6 +338,16 @@ main .right .f-request {
   opacity: 0.7;
 }
 
+main .right .f-request .point {
+  width: 7px;
+  height: 7px;
+  border: none;
+  border-radius: 100%;
+  background-color: blue;
+  margin-left: 165px;
+  margin-top: -87px;
+}
+
 main .right .f-request .pp2 {
   font-weight: 900;
   font-size: 17px;
@@ -388,14 +402,6 @@ main .right .f-request .r-column .mutual .eleven {
   padding-right: 30px;
 }
 
-main .right .f-request .r-column .mutual .eleven .point {
-  width: 20px;
-  height: 20px;
-  border: none;
-  border-radius: 100%;
-  background-color: blue;
-}
-
 main .right .f-request .r-column .c-confirm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,7 +416,7 @@ main .right .f-request .r-column .c-confirm {
   height: 35px;
   width: 180px;
   margin-right: 10px;
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 main .right .f-request .r-column .c-confirm .confirm {
@@ -456,7 +462,7 @@ main .right .f-request .r-column .five {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: -5px;
+  margin-top: -10px;
 }
 
 main .right .f-request .r-column .five p {
@@ -516,18 +522,18 @@ main .right .birthdays .utility {
   margin-bottom: 10px;
 }
 
-main .right .social {
+main .right .birthdays .social {
   font-weight: 900;
   font-size: 16px;
 }
 
-main .right .bd {
+main .right .birthdays .bd {
   font-weight: 900;
   font-size: 16px;
   color: gray;
 }
 
-main .right .pp3 {
+main .right .birthdays .pp3 {
   font-weight: 900;
   font-size: 17px;
   padding-left: 10px;
@@ -535,7 +541,7 @@ main .right .pp3 {
   margin-left: 10px;
 }
 
-main .contacts {
+main .right .contacts {
   height: 29vh;
   width: 100%;
   display: -webkit-box;
@@ -553,7 +559,7 @@ main .contacts {
           align-items: center;
 }
 
-main .contacts .space-between {
+main .right .contacts .space-between {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,7 +577,7 @@ main .contacts .space-between {
   height: 30px;
 }
 
-main .contacts .space-between .pp4 {
+main .right .contacts .space-between .pp4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,7 +597,7 @@ main .contacts .space-between .pp4 {
   height: 30px;
 }
 
-main .contacts .space-between .thr {
+main .right .contacts .space-between .thr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,7 +616,7 @@ main .contacts .space-between .thr {
   color: gray;
 }
 
-main .contacts .col2 {
+main .right .contacts .col2 {
   height: 400px;
   width: 100%;
   -webkit-box-orient: vertical;
@@ -625,8 +631,8 @@ main .contacts .col2 {
           align-items: center;
 }
 
-main .contacts .col2 .f-pic1,
-main .contacts .col2 .f-pic2 {
+main .right .contacts .col2 .f-pic1,
+main .right .contacts .col2 .f-pic2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,8 +644,8 @@ main .contacts .col2 .f-pic2 {
   width: 100%;
 }
 
-main .contacts .col2 .f-pic1 .cc,
-main .contacts .col2 .f-pic2 .cc {
+main .right .contacts .col2 .f-pic1 .cc,
+main .right .contacts .col2 .f-pic2 .cc {
   width: 35px;
   height: 35px;
   border: none;
@@ -648,17 +654,17 @@ main .contacts .col2 .f-pic2 .cc {
   margin-left: 20px;
 }
 
-main .contacts .col2 .f-pic1 .f-nm1,
-main .contacts .col2 .f-pic1 .f-nm2,
-main .contacts .col2 .f-pic2 .f-nm1,
-main .contacts .col2 .f-pic2 .f-nm2 {
+main .right .contacts .col2 .f-pic1 .f-nm1,
+main .right .contacts .col2 .f-pic1 .f-nm2,
+main .right .contacts .col2 .f-pic2 .f-nm1,
+main .right .contacts .col2 .f-pic2 .f-nm2 {
   margin-left: 10px;
   margin-top: 10px;
   text-align: center;
   color: gray;
 }
 
-.left {
+main .left {
   width: 20%;
   height: 100vh;
   display: -webkit-box;
@@ -676,7 +682,7 @@ main .contacts .col2 .f-pic2 .f-nm2 {
           align-items: flex-start;
 }
 
-.left .scroll {
+main .left .scroll {
   width: 10px;
   height: 80vh;
   border: none;
@@ -684,7 +690,7 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   background-color: gray;
 }
 
-.left .column {
+main .left .column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,33 +701,32 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   width: 100%;
 }
 
-.left .column .icons {
+main .left .column .icons {
   height: 70vh;
   border-bottom: 2px solid gray;
   margin-top: 20px;
   padding-left: 20px;
 }
 
-.left .column .icons .icon {
+main .left .column .icons .icon {
   height: 50px;
   font-size: 17px;
   font-weight: 700;
   opacity: 0.8;
 }
 
-.left .column .icons .icon p {
+main .left .column .icons .icon p {
   height: 70vh;
-  border-bottom: 2px solid gray;
   margin-top: -30px;
   padding-left: 20px;
   margin-left: 20px;
 }
 
-.left .column .icons .icon .shift {
+main .left .column .icons .icon .shift {
   margin-left: 20px;
 }
 
-.left .column .icons .icon .mypic img {
+main .left .column .icons .icon .mypic img {
   width: 35px;
   height: 35px;
   border: none;
@@ -729,18 +734,18 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   margin-left: -5px;
 }
 
-.left .shortcut {
+main .left .shortcut {
   padding-left: 20px;
 }
 
-.left .shortcut .pp5 {
+main .left .shortcut .pp5 {
   color: gray;
   font-size: 19px;
   font-weight: 900;
   margin-top: 5px;
 }
 
-.left .shortcut .divv {
+main .left .shortcut .divv {
   height: 40px;
   width: 100%;
   display: -webkit-box;
@@ -759,7 +764,7 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   margin-top: -10px;
 }
 
-.left .shortcut .div1 {
+main .left .shortcut .div1 {
   font-weight: 900;
   font-size: 19px;
   margin-top: -5px;
@@ -767,7 +772,7 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   margin-right: 50px;
 }
 
-.left .shortcut .div2 {
+main .left .shortcut .div2 {
   font-weight: 900;
   font-size: 19px;
   margin-top: -5px;
@@ -775,8 +780,8 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   opacity: 0.7;
 }
 
-.left .shortcut .divv1,
-.left .shortcut .divv2 {
+main .left .shortcut .divv1,
+main .left .shortcut .divv2 {
   width: 70px;
   height: 25px;
   border: none;
@@ -785,11 +790,11 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   margin-top: -20px;
 }
 
-.left .shortcut .divv2 {
+main .left .shortcut .divv2 {
   margin-top: -20px;
 }
 
-.middle {
+main .middle {
   width: 60%;
   height: 90vh;
   display: -webkit-box;
@@ -807,7 +812,7 @@ main .contacts .col2 .f-pic2 .f-nm2 {
           align-items: center;
 }
 
-.middle .stories {
+main .middle .stories {
   width: 700px;
   height: 40vh;
   display: -webkit-box;
@@ -825,7 +830,7 @@ main .contacts .col2 .f-pic2 .f-nm2 {
           align-items: flex-start;
 }
 
-.middle .stories .story {
+main .middle .stories .story {
   width: 125px;
   height: 37vh;
   border: none;
@@ -835,7 +840,7 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   position: relative;
 }
 
-.middle .stories .story .pic {
+main .middle .stories .story .pic {
   width: 40px;
   height: 40px;
   border: 5px solid cornflowerblue;
@@ -845,48 +850,68 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   left: 15px;
 }
 
-.middle .stories .story p {
+main .middle .stories .story p {
   margin-top: 31vh;
   text-align: center;
   color: white;
 }
 
-.middle .stories .c-story {
+main .middle .stories .c-story {
   width: 125px;
   height: 37vh;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 5px;
   position: relative;
+  background-color: white;
 }
 
-.middle .stories .c-story .gray {
+main .middle .stories .c-story .white {
+  background-color: white;
   width: 125px;
-  height: 26vh;
+  height: 3vh;
+  border: none;
+  border-radius: 0 0 20px 20px;
+}
+
+main .middle .stories .c-story .white .p-create {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: black;
+  opacity: 0.7;
+  font-weight: 700;
+}
+
+main .middle .stories .c-story .gray {
+  border-radius: 20px 20px 0 0;
+  width: 125px;
+  height: 28vh;
   background-color: gray;
 }
 
-.middle .stories .c-story .gray .pic img {
-  width: 125px;
-  height: 26vh;
+main .middle .stories .c-story .gray .plus {
+  position: relative;
 }
 
-.middle .stories .c-story .gray .white {
+main .middle .stories .c-story .gray .plus .fa-circle-plus {
+  position: absolute;
+  margin-top: -41px;
+  margin-left: 35px;
+  color: cornflowerblue;
   background-color: white;
+  border: 5px solid white;
+  border-radius: 100%;
+}
+
+main .middle .stories .c-story .gray .pic img {
   width: 125px;
-  height: 9vh;
+  height: 28vh;
   border: none;
-  border-radius: 0 0 10px 10px;
+  border-radius: 20px;
 }
 
-.middle .stories .c-story .gray p {
-  margin: 0 0;
-  padding-top: 30px;
-  text-align: center;
-  color: black;
-}
-
-.middle .stories .meta {
+main .middle .meta {
+  border: 5px solid red;
   width: 65%;
   height: 47vh;
   border: none;
@@ -895,7 +920,7 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   opacity: 9;
 }
 
-.middle .stories .meta .row1 {
+main .middle .meta .row1 {
   width: auto;
   height: 25%;
   border: none;
@@ -906,24 +931,30 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   padding-left: 20px;
 }
 
-.middle .stories .meta .row1 .p {
-  font-size: 17px;
-  font-weight: 900;
-  margin-left: 50px;
-  padding-top: 20px;
+main .middle .meta .row1 .fa-infinity {
+  color: blue;
+  margin-top: 30px;
 }
 
-.middle .stories .meta .row2 {
+main .middle .meta .row1 .p {
+  font-size: 17px;
+  font-weight: 900;
+  margin-left: 23px;
+  margin-top: -20px;
+  opacity: 0.7;
+}
+
+main .middle .meta .row2 {
   opacity: 7;
   padding-left: 20px;
 }
 
-.middle .stories .meta .row2 .p1 {
+main .middle .meta .row2 .p1 {
   font-size: 19px;
   font-weight: 900;
 }
 
-.middle .stories .meta .row3 {
+main .middle .meta .row3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,7 +973,7 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   width: 90%;
 }
 
-.middle .stories .meta .row3 .dont {
+main .middle .meta .row3 .dont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -962,7 +993,7 @@ main .contacts .col2 .f-pic2 .f-nm2 {
   border-radius: 5px;
 }
 
-.middle .stories .meta .row3 .learn {
+main .middle .meta .row3 .learn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

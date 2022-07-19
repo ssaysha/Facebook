@@ -81,17 +81,20 @@ header {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      .blue-border {
+        border-bottom: 2px solid blue;
+      }
+      .fa-house {
+        color: blue;
+      }
       .iconn {
-        width: 50px;
+        color: black;
+        background-color: white;
+        width: 100px;
         height: 50px;
-        border-radius: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        .border {
-          border-bottom: 5px solid blue;
-          color: blue;
-        }
       }
     }
   }
@@ -197,6 +200,15 @@ main {
       border-bottom: 2px solid gray;
       margin-top: 10px;
       opacity: 0.7;
+      .point {
+        width: 7px;
+        height: 7px;
+        border: none;
+        border-radius: 100%;
+        background-color: blue;
+        margin-left: 165px;
+        margin-top: -87px;
+      }
       .pp2 {
         font-weight: 900;
         font-size: 17px;
@@ -232,16 +244,6 @@ main {
             font-size: 15px;
             float: right;
             padding-right: 30px;
-            .point {
-              width: 20px;
-              height: 20px;
-              border: none;
-              border-radius: 100%;
-              background-color: blue;
-              // margin-left: -300px;
-              // margin-top: -14px;
-              // margin-right: 10px;
-            }
           }
         }
         .c-confirm {
@@ -251,7 +253,7 @@ main {
           height: 35px;
           width: 180px;
           margin-right: 10px;
-          margin-top: 5px;
+          margin-top: 0;
           .confirm {
             width: 87px;
             height: 30px;
@@ -277,7 +279,7 @@ main {
         .five {
           display: flex;
           flex-direction: row;
-          margin-top: -5px;
+          margin-top: -10px;
           p {
             color: gray;
             margin-top: 0;
@@ -325,260 +327,276 @@ main {
         margin-left: 60px;
         margin-bottom: 10px;
       }
-    
-    .social {
-      font-weight: 900;
-      font-size: 16px;
-    }
-    .bd {
-      font-weight: 900;
-      font-size: 16px;
-      color: gray;
-    }
-    .pp3 {
-      font-weight: 900;
-      font-size: 17px;
-      padding-left: 10px;
-      color: gray;
-      margin-left: 10px;
-    }
-  }
-  .contacts {
-    height: 29vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    .space-between {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      height: 30px;
-      .pp4 {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+
+      .social {
+        font-weight: 900;
+        font-size: 16px;
+      }
+      .bd {
+        font-weight: 900;
+        font-size: 16px;
+        color: gray;
+      }
+      .pp3 {
         font-weight: 900;
         font-size: 17px;
         padding-left: 10px;
         color: gray;
-        margin-top: 0px;
         margin-left: 10px;
-        width: 55%;
-        height: 30px;
-      }
-      .thr {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 45%;
-        height: 30px;
-        color: gray;
       }
     }
-    .col2 {
-      height: 400px;
+    .contacts {
+      height: 29vh;
       width: 100%;
+      display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
-      .f-pic1,
-      .f-pic2 {
+      .space-between {
         display: flex;
         flex-direction: row;
-        height: 40px;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        .cc {
-          width: 35px;
-          height: 35px;
-          border: none;
-          border-radius: 100%;
-          background-color: silver;
-          margin-left: 20px;
-        }
-        .f-nm1,
-        .f-nm2 {
+        height: 30px;
+        .pp4 {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-weight: 900;
+          font-size: 17px;
+          padding-left: 10px;
+          color: gray;
+          margin-top: 0px;
           margin-left: 10px;
-          margin-top: 10px;
-          text-align: center;
+          width: 55%;
+          height: 30px;
+        }
+        .thr {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 45%;
+          height: 30px;
           color: gray;
         }
       }
-    }
-  }
-}
-.left {
-  width: 20%;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  .scroll {
-    width: 10px;
-    height: 80vh;
-    border: none;
-    border-radius: 50px;
-    background-color: gray;
-  }
-  .column {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    .icons {
-      height: 70vh;
-      border-bottom: 2px solid gray;
-      margin-top: 20px;
-      padding-left: 20px;
-
-      .icon {
-        height: 50px;
-        font-size: 17px;
-        font-weight: 700;
-        opacity: 0.8;
-        p {
-          height: 70vh;
-          border-bottom: 2px solid gray;
-          margin-top: -30px;
-          padding-left: 20px;
-          margin-left: 20px;
-        }
-        .shift {
-          margin-left: 20px;
-        }
-        .mypic {
-          img {
+      .col2 {
+        height: 400px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .f-pic1,
+        .f-pic2 {
+          display: flex;
+          flex-direction: row;
+          height: 40px;
+          width: 100%;
+          .cc {
             width: 35px;
             height: 35px;
             border: none;
             border-radius: 100%;
-            margin-left: -5px;
+            background-color: silver;
+            margin-left: 20px;
+          }
+          .f-nm1,
+          .f-nm2 {
+            margin-left: 10px;
+            margin-top: 10px;
+            text-align: center;
+            color: gray;
           }
         }
       }
     }
   }
-  .shortcut {
-    padding-left: 20px;
-    .pp5 {
-      color: gray;
-      font-size: 19px;
-      font-weight: 900;
-      margin-top: 5px;
-    }
-    .divv {
-      height: 40px;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: -10px;
-    }
-    .div1 {
-      font-weight: 900;
-      font-size: 19px;
-      margin-top: -5px;
-      opacity: 0.7;
-      margin-right: 50px;
-    }
-    .div2 {
-      font-weight: 900;
-      font-size: 19px;
-      margin-top: -5px;
-      margin-right: 50px;
-      opacity: 0.7;
-    }
-    .divv1,
-    .divv2 {
-      width: 70px;
-      height: 25px;
-      border: none;
-      border-radius: 50px;
-      background-color: slateblue;
-      margin-top: -20px;
-    }
-    .divv2 {
-      margin-top: -20px;
-    }
-  }
-}
-.middle {
-  // sth here is wrong
-  width: 60%;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .stories {
-    width: 700px;
-    height: 40vh;
+  .left {
+    width: 20%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    .story {
-      width: 125px;
-      height: 37vh;
+    .scroll {
+      width: 10px;
+      height: 80vh;
       border: none;
-      border-radius: 20px;
-      background-color: maroon;
-      margin: 5px;
-      position: relative;
-      .pic {
-        width: 40px;
-        height: 40px;
-        border: 5px solid cornflowerblue;
-        border-radius: 100%;
-        position: absolute;
-        top: 15px;
-        left: 15px;
-      }
-      p {
-        margin-top: 31vh;
-        text-align: center;
-        color: white;
-      }
+      border-radius: 50px;
+      background-color: gray;
     }
-    .c-story {
-      width: 125px;
-      height: 37vh;
-      border: none;
-      border-radius: 10px;
-      margin: 5px;
-      position: relative;
-      .gray {
-        width: 125px;
-        height: 26vh;
-        background-color: gray;
-        .pic {
-          img {
-            width: 125px;
-            height: 26vh;
+    .column {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .icons {
+        height: 70vh;
+        border-bottom: 2px solid gray;
+        margin-top: 20px;
+        padding-left: 20px;
+
+        .icon {
+          height: 50px;
+          font-size: 17px;
+          font-weight: 700;
+          opacity: 0.8;
+          p {
+            height: 70vh;
+            margin-top: -30px;
+            padding-left: 20px;
+            margin-left: 20px;
+          }
+          .shift {
+            margin-left: 20px;
+          }
+          .mypic {
+            img {
+              width: 35px;
+              height: 35px;
+              border: none;
+              border-radius: 100%;
+              margin-left: -5px;
+            }
           }
         }
+      }
+    }
+    .shortcut {
+      padding-left: 20px;
+      .pp5 {
+        color: gray;
+        font-size: 19px;
+        font-weight: 900;
+        margin-top: 5px;
+      }
+      .divv {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -10px;
+      }
+      .div1 {
+        font-weight: 900;
+        font-size: 19px;
+        margin-top: -5px;
+        opacity: 0.7;
+        margin-right: 50px;
+      }
+      .div2 {
+        font-weight: 900;
+        font-size: 19px;
+        margin-top: -5px;
+        margin-right: 50px;
+        opacity: 0.7;
+      }
+      .divv1,
+      .divv2 {
+        width: 70px;
+        height: 25px;
+        border: none;
+        border-radius: 50px;
+        background-color: slateblue;
+        margin-top: -20px;
+      }
+      .divv2 {
+        margin-top: -20px;
+      }
+    }
+  }
+  .middle {
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .stories {
+      width: 700px;
+      height: 40vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      .story {
+        width: 125px;
+        height: 37vh;
+        border: none;
+        border-radius: 20px;
+        background-color: maroon;
+        margin: 5px;
+        position: relative;
+        .pic {
+          width: 40px;
+          height: 40px;
+          border: 5px solid cornflowerblue;
+          border-radius: 100%;
+          position: absolute;
+          top: 15px;
+          left: 15px;
+        }
+        p {
+          margin-top: 31vh;
+          text-align: center;
+          color: white;
+        }
+      }
+      .c-story {
+        width: 125px;
+        height: 37vh;
+        border: none;
+        border-radius: 20px;
+        margin: 5px;
+        position: relative;
+        background-color: white;
         .white {
           background-color: white;
           width: 125px;
-          height: 9vh;
+          height: 3vh;
           border: none;
-          border-radius: 0 0 10px 10px;
+          border-radius: 0 0 20px 20px;
+          .p-create {
+            margin-left: 20px;
+            margin-top: 20px;
+            color: black;
+            opacity: 0.7;
+            font-weight: 700;
+          }
         }
-        p {
-          margin: 0 0;
-          padding-top: 30px;
-          text-align: center;
-          color: black;
+        .gray {
+          border-radius: 20px 20px 0 0;
+          width: 125px;
+          height: 28vh;
+          background-color: gray;
+
+          .plus {
+            position: relative;
+            .fa-circle-plus {
+              position: absolute;
+              margin-top: -41px;
+              margin-left: 35px;
+              color: cornflowerblue;
+              background-color: white;
+              border: 5px solid white;
+              border-radius: 100%;
+            }
+          }
+          .pic {
+            img {
+              width: 125px;
+              height: 28vh;
+              border: none;
+              border-radius: 20px;
+            }
+          }
         }
       }
     }
-  }
     .meta {
       border: 5px solid red;
       width: 65%;
@@ -595,11 +613,16 @@ main {
         background-image: linear-gradient(to top, rgb(33, 197, 33), white);
         margin-top: -15px;
         padding-left: 20px;
+        .fa-infinity {
+          color: blue;
+          margin-top: 30px;
+        }
         .p {
           font-size: 17px;
           font-weight: 900;
-          margin-left: 50px;
-          padding-top: 20px;
+          margin-left: 23px;
+          margin-top: -20px;
+          opacity: 0.7;
         }
       }
       .row2 {
@@ -647,4 +670,4 @@ main {
       }
     }
   }
-
+}
